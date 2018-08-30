@@ -7,7 +7,7 @@
  */
 
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+import {Platform, StyleSheet, Text, View, Image} from 'react-native';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -21,11 +21,11 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
+        <Text style={styles.welcome}>Hello!</Text>
         <Text style={styles.instructions}>Rizal Gradianto</Text>
          <Text style={styles.instructions}>32</Text>
           <Text style={styles.instructions}>XI RPL 1</Text>
-        <Text style={styles.instructions}>{instructions}</Text>
+        <Image source={require('./rzl.jpg')} style={styles.gambar}/>
       </View>
     );
   }
@@ -47,5 +47,9 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: '#333333',
     marginBottom: 5,
+  },
+  gambar: {
+  	width: 200,
+  	height : 280,
   },
 });
