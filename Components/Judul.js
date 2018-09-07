@@ -4,8 +4,10 @@ import {Text} from 'react-native';
 class Judul extends Component{
 	render(){
 		return(
-			<Text style={salon.Judul}>BIODATA</Text>
-			)
+			<Text style={salon.Judul}>
+			{this.props.judul}
+			</Text>
+			);
 	}
 }
 
@@ -18,3 +20,7 @@ const salon = {
 	}
 }
 export default Judul;
+
+
+
+
