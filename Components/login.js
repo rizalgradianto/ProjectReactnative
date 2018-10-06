@@ -17,7 +17,7 @@ class Login extends Component {
 			placeholder="Password"
 			placeholderTextColor="#a8a8a8"
 			/>
-			<TouchableOpacity style={forstyle.tombol}>
+			<TouchableOpacity style={forstyle.tombol} onPress={() => this.props.navigation.navigate('Details')}>
 				<Text style={{color: 'white', fontWeight: 'bold', fontSize: 18}}>
 				Login
 				</Text>
