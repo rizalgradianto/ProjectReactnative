@@ -1,26 +1,12 @@
 import React, {Component} from 'react';
-import {Text} from 'react-native';
+import {View, Text, Image} from 'react-native';
 
 class Judul extends Component{
-	render(){
-		return(
-			<Text style={salon.Judul}>
-			{this.props.judul}
-			</Text>
-			);
-	}
+	 render() {
+    return (
+    	<Text>WELCOME</Text>
+    )
+  }
 }
 
-const salon = {
-	Judul: {
-		color: '#3bb2b8',
-		fontSize: 50,
-		fontWeight:'bold',
-		backgroundColor: '#fff'	
-	}
-}
 export default Judul;
-
-
-
-
